@@ -1,65 +1,73 @@
 import Image from "next/image";
 
 export default function Home() {
+
+  const techStack = [
+    { name: "Nextjs", icon: "/nextjs-original.svg" },
+    { name: "React", icon: "/nextjs-original.svg" },
+    { name: "JavaScript", icon: "/nextjs-original.svg" },
+    { name: "TailwindCSS", icon: "/nextjs-original.svg" },
+    { name: "React Native", icon: "/nextjs-original.svg" },
+    { name: "HTML", icon: "/nextjs-original.svg" },
+    { name: "CSS", icon: "/nextjs-original.svg" },
+    { name: "Python", icon: "/nextjs-original.svg" },
+    { name: "AWS", icon: "/nextjs-original.svg" },
+    { name: "MongoDB", icon: "/nextjs-original.svg" },
+    { name: "Firebase", icon: "/nextjs-original.svg" },
+    { name: "SQL", icon: "/nextjs-original.svg" },
+  ]
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="flex flex-col min-h-screen items-center justify-center gap-15">
+
+      {/* container for hero section mobile vers. */}
+      <div className="flex flex-col lg:hidden">
+
+        {/* container for textside */}
+          <div className="flex flex-col items-center gap-10 m-5">
+            <h2 className="text-2xl text-left w-[80%] sm:w-[60%] self-baseline">Masters Computer Science Student</h2>
+            <h1 className="text-6xl text-center font-inter font-bold">Matthew Tran</h1>
+            <h2 className="text-2xl text-right w-[90%] sm:w-[60%] self-end">Software Engineering & Web Development</h2>
+          </div>
+
+        {/* container for 3d models */}
+
+
+
+      </div>
+
+      {/* container for hero section pc vers. */}
+      <div className="hidden lg:flex flex-row gap-5">
+
+        {/* container for textside */}
+          <div className="flex flex-col gap-1 m-5 self-center">
+            <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1>
+            <h2 className="text-gradient text-2xl">Masters Computer Science Student</h2>
+            <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2>
+          </div>
+
+        {/* container for 3d models */}
+          <div className="flex">
+            <Image 
+              src="/WuwaHomepage.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          </div>
+
+
+      </div>
+
+      {/* container for tech stack */}
+      <div className="flex flex-col gap-1 m-5">
+        <h1 className="text-gradient text-6xl font-inter font-bold">Tech Stack</h1>
+
+        {/* container for marquee */}
+        
+        
+      </div>
+
     </div>
   );
 }
