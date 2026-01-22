@@ -127,7 +127,7 @@ export default function Home() {
       </div>
 
       {/* container for tech stack pc */}
-      <div className="flex flex-col gap-5 w-full px-4 overflow-hidden">
+      <div className="hidden lg:flex flex-col gap-5 w-full px-4 overflow-hidden">
         <h1 className="text-gradient text-5xl font-inter font-bold text-center">Tech Stack</h1>
 
         {/* container for marquee */}
@@ -155,7 +155,115 @@ export default function Home() {
       </div>
 
       {/* container for project section mobile */}
-      
+      <div className="flex flex-col gap-5 lg:hidden">
+        <h1 className="text-gradient text-5xl font-inter font-bold text-center">Projects</h1>
+        <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
+          <Image 
+              src="/WuwaHomepage.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
+            />
+          <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
+            <div className="font-bold text-xl">Wuwa.Network</div>
+            <p className="text-gray-200 text-base">
+              Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing. 
+            </p>
+            <div className="flex flex-row gap-1">
+              <Image
+                src="/nextjs-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/tailwindcss-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/python-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
+          <Image 
+              src="/EatWithEmilyHomepage.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
+            />
+          <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
+            <div className="font-bold text-xl">EatWithEmily.com</div>
+            <p className="text-gray-200 text-base">
+              Freelancing project for a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. 
+            </p>
+            <div className="flex flex-row gap-1">
+              <Image
+                src="/react-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/tailwindcss-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/cloudinary.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
+          <Image 
+              src="/EatWithEmilyHomepage.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
+            />
+          <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
+            <div className="font-bold text-xl">EatWithEmily.com</div>
+            <p className="text-gray-200 text-base">
+              Freelancing project for a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. 
+            </p>
+            <div className="flex flex-row gap-1">
+              <Image
+                src="/react-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/tailwindcss-original.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+              <Image
+                src="/cloudinary.svg"
+                width={30}
+                height={50}
+                alt="NextJS Icon"
+              />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
 
 
     </div>
