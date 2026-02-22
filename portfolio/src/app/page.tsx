@@ -155,7 +155,7 @@ export default function Home() {
       </div>
 
       {/* container for project section mobile */}
-      <div className="flex flex-col gap-5 lg:hidden">
+      <div className="flex flex-col gap-5 mb-8 lg:hidden">
         <h1 className="text-gradient text-5xl font-inter font-bold text-center">Projects</h1>
         <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
           <Image 
@@ -209,19 +209,19 @@ export default function Home() {
                 src="/react-original.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="React Icon"
               />
               <Image
                 src="/tailwindcss-original.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="TailwindCSS Icon"
               />
               <Image
                 src="/cloudinary.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="Cloudinary Icon"
               />
             </div>
           </div>
@@ -229,34 +229,92 @@ export default function Home() {
 
         <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
           <Image 
-              src="/EatWithEmilyHomepage.png"
+              src="/OldPortfolioHomepage.png"
               width={800}
               height={500}
               alt="Picture of my best website"
             />
           <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
-            <div className="font-bold text-xl">EatWithEmily.com</div>
+            <div className="font-bold text-xl">First Personal Portfolio</div>
             <p className="text-gray-200 text-base">
-              Freelancing project for a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. 
+              Developed a portfolio website highly inspired by Discord profile layouts. Integrated direct emailing, multiple pages, and custom SVGs. 
             </p>
             <div className="flex flex-row gap-1">
               <Image
                 src="/react-original.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="React Icon"
               />
               <Image
-                src="/tailwindcss-original.svg"
+                src="/css3-original.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="CSS Icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
+          <Image 
+              src="/WebsiteTemplateExample.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
+            />
+          <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
+            <div className="font-bold text-xl">Self-Made Website Templates</div>
+            <p className="text-gray-200 text-base">
+              Learned how to create websites using basic HTML and CSS. I went back to learn the fundamentals of web development and built some website templates as practice.
+            </p>
+            <div className="flex flex-row gap-1">
+              <Image
+                src="/html5-original.svg"
+                width={30}
+                height={50}
+                alt="HTML Icon"
               />
               <Image
-                src="/cloudinary.svg"
+                src="/css3-original.svg"
                 width={30}
                 height={50}
-                alt="NextJS Icon"
+                alt="CSS Icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
+          <Image 
+              src="/DiscordBotsExample.png"
+              width={800}
+              height={500}
+              alt="Picture of my best website"
+            />
+          <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
+            <div className="font-bold text-xl">BlitzBot & Outrider Amber</div>
+            <p className="text-gray-200 text-base">
+              BlitzBot allows users to make personal gaming ranked leaderboards with friends. Outrider Amber allows users to obtain roles and ping them when new releases for a game appear.
+            </p>
+            <div className="flex flex-row gap-1">
+              <Image
+                src="/python-original.svg"
+                width={30}
+                height={50}
+                alt="Python Icon"
+              />
+              <Image
+                src="/firebase-original.svg"
+                width={30}
+                height={50}
+                alt="Firebase Icon"
+              />
+              <Image
+                src="/amazonwebservices-original-wordmark.svg"
+                width={30}
+                height={50}
+                alt="AWS Icon"
               />
             </div>
           </div>
