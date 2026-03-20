@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { LampContainer } from "@/components/ui/lamp";
+import { Spotlight } from "@/components/ui/spotlight-new";
 
 export default function Home() {
 
@@ -37,7 +39,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center gap-16 sm:m-16">
+    <div className="flex flex-col min-h-screen items-center justify-center gap-16">
 
       {/* container for hero section mobile vers. */}
       <div className="flex flex-col lg:hidden">
@@ -56,17 +58,19 @@ export default function Home() {
       </div>
 
       {/* container for hero section pc vers. */}
-      <div className="hidden lg:flex flex-row gap-5">
+      <div className="relative justify-center hidden lg:flex flex-row gap-5 overflow-hidden w-full py-10">
+
+        <Spotlight />
 
         {/* container for textside */}
-          <div className="flex flex-col gap-1 m-5 self-center">
+          <div className=" relative z-10 flex flex-col gap-1 m-5 self-center">
             <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1>
-            <h2 className="text-gradient text-2xl">Masters Computer Science Student</h2>
+            <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2>
             <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2>
           </div>
 
         {/* container for 3d models */}
-          <div className="flex">
+          <div className=" relative z-10 flex">
             <Image 
               src="/WuwaHomepage.png"
               width={800}
