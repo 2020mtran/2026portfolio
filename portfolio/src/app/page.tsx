@@ -53,10 +53,16 @@ export default function Home() {
       <div className="flex flex-col lg:hidden">
 
         {/* container for textside */}
-          <div className="flex flex-col items-center gap-10 m-3 sm:m-0">
-            <h2 className="text-2xl text-left w-[80%] sm:w-[60%] self-baseline">Masters Computer Science Student</h2>
-            <h1 className="text-6xl text-center font-bold">Matthew Tran</h1>
-            <h2 className="text-2xl text-right w-[90%] sm:w-[60%] self-end">Software Engineering & Web Development</h2>
+          <div className="flex flex-col items-center gap-5 m-5 sm:m-0">
+            <h2 className="text-xl self-baseline text-gray-400">
+              <span className="text-2xl text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]">
+                •
+              </span>{" "} Matthew Tran</h2>
+            <h1 className="text-3xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
+            <div className="flex flex-col gap-0 self-baseline">
+              <h2 className="text-lg text-left self-baseline">Software Engineer & Web Dev</h2>
+              <h2 className="text-lg text-left text-gray-400 self-baseline">Graduate Student @ CSUF</h2>
+            </div>
           </div>
 
         {/* container for 3d models */}
