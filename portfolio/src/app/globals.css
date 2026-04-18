@@ -21,6 +21,13 @@
     color: transparent;
     -webkit-text-fill-color: transparent;
   }
+  .text-gradient-reverse {
+    background-image: linear-gradient(to bottom, #FFFFFF, #B7B7B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 body {
