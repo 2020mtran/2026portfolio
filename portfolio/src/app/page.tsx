@@ -54,14 +54,14 @@ export default function Home() {
 
         {/* container for textside */}
           <div className="flex flex-col items-center gap-5 m-5 sm:m-0">
-            <h2 className="text-xl self-baseline text-gray-400">
-              <span className="text-2xl text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]">
+            <h2 className="text-xl xxs:text-2xl self-baseline text-gray-400">
+              <span className="text-2xl xxs:text-3xl text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]">
                 •
               </span>{" "} Matthew Tran</h2>
-            <h1 className="text-3xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
+            <h1 className="text-3xl xxs:text-4xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
             <div className="flex flex-col gap-0 self-baseline">
-              <h2 className="text-lg text-left self-baseline">Software Engineer & Web Dev</h2>
-              <h2 className="text-lg text-left text-gray-400 self-baseline">CS Graduate Student at CSUF</h2>
+              <h2 className="text-lg xxs:text-xl text-left self-baseline">Software Engineer & Web Dev</h2>
+              <h2 className="text-lg xxs:text-xl text-left text-gray-400 self-baseline">CS Graduate Student at CSUF</h2>
             </div>
           </div>
 

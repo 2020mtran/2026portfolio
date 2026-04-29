@@ -11,6 +11,8 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
   --color-new-grey: #B7B7B7;
+  --breakpoint-xxs: 375px;
+  --breakpoint-xs: 425px;
 }
 
 @layer utilities {
