@@ -157,3 +157,23 @@ body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
   }
 }
+
+/* Hide scrollbar by default */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Show when actively scrolling */
+body.scrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.6);
+}

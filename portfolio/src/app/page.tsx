@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { LampContainer } from "@/components/ui/lamp";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import Header from "@/components/ui/header";
 import MobileHeader from "@/components/ui/mobileHeader";
+import { useScrollbarVisibility } from "@/components/ui/useScrollbarVisibility";
 
 export default function Home() {
+
+  useScrollbarVisibility(2000);
 
   const techStack = [
     { name: "Nextjs", icon: "/nextjs-original.svg" },
@@ -50,7 +55,7 @@ export default function Home() {
         <Header />
       </div>
       {/* container for hero section mobile vers. */}
-      <div className="flex flex-col lg:hidden my-10">
+      <div className="flex flex-col md:hidden my-10">
 
         {/* container for textside */}
           <div className="flex flex-col items-center gap-5 m-5 sm:m-0">
@@ -72,13 +77,14 @@ export default function Home() {
       </div>
 
       {/* container for hero section pc vers. */}
-      <div className="relative justify-center hidden lg:flex flex-row gap-5 overflow-hidden w-full py-10">
+      <div className="relative justify-center hidden md:flex flex-row gap-5 overflow-hidden w-full py-10">
 
         {/* <Spotlight /> */}
 
         {/* container for textside */}
         <div className=" relative z-10 flex flex-col gap-1 m-5 self-center">
-          <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1>
+          {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
+          <h1 className="text-3xl xxs:text-4xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
           <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2>
           <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2>
         </div>
