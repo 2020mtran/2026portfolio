@@ -48,17 +48,17 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full">
       <Spotlight />
-      <div className="flex lg:hidden w-full my-5">
+      <div className="flex md:hidden w-full my-5">
         <MobileHeader />
       </div>
-      <div className="hidden lg:flex w-full">
+      <div className="hidden md:flex w-full">
         <Header />
       </div>
       {/* container for hero section mobile vers. */}
-      <div className="flex flex-col md:hidden my-10">
+      <div className="flex flex-col lg:hidden my-10">
 
         {/* container for textside */}
-          <div className="flex flex-col items-center gap-5 m-5 sm:m-0">
+          <div className="flex flex-col items-center gap-5 m-5 md:m-10">
             <h2 className="text-xl xxs:text-2xl self-baseline text-gray-400">
               <span className="text-2xl xxs:text-3xl text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)]">
                 •
@@ -77,28 +77,31 @@ export default function Home() {
       </div>
 
       {/* container for hero section pc vers. */}
-      <div className="relative justify-center hidden md:flex flex-row gap-5 overflow-hidden w-full py-10">
+      <div className="relative justify-center hidden lg:flex flex-row overflow-hidden w-full py-10 px-12 xl:px-32">
 
         {/* <Spotlight /> */}
 
         {/* container for textside */}
-        <div className=" relative z-10 flex flex-col gap-1 m-5 self-center">
+        <div className="relative z-10 flex flex-col gap-1 self-center basis-[50%] max-w-[400px]">
           {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
-          <h1 className="text-3xl xxs:text-4xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
-          <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2>
-          <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2>
+          <h1 className="text-4xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
+          {/* <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2> */}
+          {/* <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2> */}
         </div>
 
         {/* container for 3d models */}
-        <div className=" relative z-10 flex">
+        <div className="relative z-10 flex basis-[50%]">
           <Image 
-            src="/WuwaHomepage.png"
-            width={800}
-            height={500}
+            src="/computer.png"
+            width={695}
+            height={638}
             alt="Picture of my best website"
-          />
+            className="w-full
+              max-w-[600px]
+              h-auto
+              object-contain"
+            />
         </div>
-
 
       </div>
 
