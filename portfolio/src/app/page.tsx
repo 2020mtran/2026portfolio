@@ -82,15 +82,15 @@ export default function Home() {
         {/* <Spotlight /> */}
 
         {/* container for textside */}
-        <div className="relative z-10 flex flex-col gap-1 self-center basis-[50%] max-w-[400px]">
+        <div className="relative z-10 flex flex-col gap-1 self-center basis-[50%] max-w-[400px] xl:max-w-none">
           {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
-          <h1 className="text-4xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
+          <h1 className="text-4xl xl:text-6xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
           {/* <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2> */}
           {/* <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2> */}
         </div>
 
         {/* container for 3d models */}
-        <div className="relative z-10 flex basis-[50%]">
+        <div className="relative z-10 flex basis-[50%] xl:basis-[60%] xl:px-16">
           <Image 
             src="/computer.png"
             width={695}
@@ -98,6 +98,7 @@ export default function Home() {
             alt="Picture of my best website"
             className="w-full
               max-w-[600px]
+              xl:max-w-none
               h-auto
               object-contain"
             />
