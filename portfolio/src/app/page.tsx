@@ -92,7 +92,7 @@ export default function Home() {
         {/* container for 3d models */}
         <div className="relative z-10 flex basis-[50%] xl:basis-[60%] xl:px-16">
           <Image 
-            src="/computer.png"
+            src="/Model.png"
             width={695}
             height={638}
             alt="Picture of my best website"
