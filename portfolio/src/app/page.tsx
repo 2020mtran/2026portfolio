@@ -47,7 +47,21 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full">
-      <Spotlight />
+        {/* <Spotlight /> */}
+        <div className="lg:hidden absolute inset-0">
+          <Spotlight
+            gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .1) 0, hsla(360, 100%, 0%, 0.2) 50%, hsla(210, 100%, 45%, 0) 80%)"
+            gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
+            gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
+          />
+        </div>
+        <div className="hidden lg:flex absolute inset-0">
+          <Spotlight
+            gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .21) 0, hsla(360, 100%, 0%, 0.12) 50%, hsla(210, 100%, 45%, 0) 80%)"
+            gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
+            gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
+          />
+        </div>
       <div className="flex md:hidden w-full my-5">
         <MobileHeader />
       </div>
@@ -55,7 +69,22 @@ export default function Home() {
         <Header />
       </div>
       {/* container for hero section mobile vers. */}
-      <div className="flex flex-col lg:hidden my-10">
+      <div className="flex flex-col items-center lg:hidden my-10">
+
+        {/* container for 3d models */}
+        <div className="relative z-10 flex basis-[50%] xl:basis-[60%] xl:px-16">
+          <Image 
+            src="/Model.png"
+            width={695}
+            height={638}
+            alt="Picture of my best website"
+            className="w-full
+              max-w-[600px]
+              xl:max-w-none
+              h-auto
+              object-contain"
+            />
+        </div>
 
         {/* container for textside */}
           <div className="flex flex-col items-center gap-5 m-5 md:m-10">
@@ -82,7 +111,7 @@ export default function Home() {
         {/* <Spotlight /> */}
 
         {/* container for textside */}
-        <div className="relative z-10 flex flex-col gap-1 self-center basis-[50%] max-w-[400px] xl:max-w-none">
+        <div className="relative z-10 flex flex-col gap-1 mb-30 self-center basis-[50%] max-w-[400px] xl:max-w-none">
           {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
           <h1 className="text-4xl xl:text-6xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
           {/* <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2> */}
