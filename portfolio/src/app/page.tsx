@@ -7,6 +7,7 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 import Header from "@/components/ui/header";
 import MobileHeader from "@/components/ui/mobileHeader";
 import { useScrollbarVisibility } from "@/components/ui/useScrollbarVisibility";
+import { ChevronDown } from "lucide-react";
 
 export default function Home() {
 
@@ -47,7 +48,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full">
-        {/* <Spotlight /> */}
+
         <div className="lg:hidden absolute inset-0">
           <Spotlight
             gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .1) 0, hsla(360, 100%, 0%, 0.2) 50%, hsla(210, 100%, 45%, 0) 80%)"
@@ -68,6 +69,7 @@ export default function Home() {
       <div className="hidden md:flex w-full">
         <Header />
       </div>
+
       {/* container for hero section mobile vers. */}
       <div className="flex flex-col items-center lg:hidden my-10">
 
@@ -79,7 +81,7 @@ export default function Home() {
             height={638}
             alt="Picture of my best website"
             className="w-full
-              max-w-[600px]
+              max-w-150
               xl:max-w-none
               h-auto
               object-contain"
@@ -99,19 +101,13 @@ export default function Home() {
             </div>
           </div>
 
-        {/* container for 3d models */}
-
-
-
       </div>
 
       {/* container for hero section pc vers. */}
       <div className="relative justify-center hidden lg:flex flex-row overflow-hidden w-full py-10 px-12 xl:px-32">
 
-        {/* <Spotlight /> */}
-
         {/* container for textside */}
-        <div className="relative z-10 flex flex-col gap-1 mb-30 self-center basis-[50%] max-w-[400px] xl:max-w-none">
+        <div className="relative z-10 flex flex-col gap-1 mb-30 self-center basis-[50%] max-w-100 xl:max-w-none">
           {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
           <h1 className="text-4xl xl:text-6xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
           {/* <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2> */}
@@ -124,16 +120,24 @@ export default function Home() {
             src="/Model.png"
             width={695}
             height={638}
-            alt="Picture of my best website"
+            alt="3d Model of PC with my current best website on it"
             className="w-full
-              max-w-[600px]
+              max-w-150
               xl:max-w-none
               h-auto
               object-contain"
             />
         </div>
 
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+          <ChevronDown className="h-8 w-8 text-white/70 animate-bounce" />
+        </div>
+
       </div>
+
+      {/* <div className="flex bottom-8 left-1/2 -translate-x-1/2">
+        <ChevronDown className="h-8 w-8 text-white/70 animate-bounce" />
+      </div> */}
 
       {/* container for tech stack mobile */}
       <div className="flex flex-col gap-5 w-full px-4 overflow-hidden lg:hidden">
