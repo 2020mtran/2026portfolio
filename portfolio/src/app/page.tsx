@@ -48,22 +48,22 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full">
+    <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full py-16">
 
-        <div className="lg:hidden absolute inset-0">
-          <Spotlight
-            gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .1) 0, hsla(360, 100%, 0%, 0.2) 50%, hsla(210, 100%, 45%, 0) 80%)"
-            gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
-            gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
-          />
-        </div>
-        <div className="hidden lg:flex absolute inset-0">
-          <Spotlight
-            gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .21) 0, hsla(360, 100%, 0%, 0.12) 50%, hsla(210, 100%, 45%, 0) 80%)"
-            gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
-            gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
-          />
-        </div>
+      <div className="lg:hidden absolute inset-0">
+        <Spotlight
+          gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .1) 0, hsla(360, 100%, 0%, 0.2) 50%, hsla(210, 100%, 45%, 0) 80%)"
+          gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
+          gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
+        />
+      </div>
+      <div className="hidden lg:flex absolute inset-0">
+        <Spotlight
+          gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .21) 0, hsla(360, 100%, 0%, 0.12) 50%, hsla(210, 100%, 45%, 0) 80%)"
+          gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
+          gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
+        />
+      </div>
       <div className="flex md:hidden w-full my-5">
         <MobileHeader />
       </div>
@@ -105,7 +105,7 @@ export default function Home() {
       </div>
 
       {/* container for hero section pc vers. */}
-      <div className="relative justify-center hidden lg:flex flex-row overflow-hidden w-full py-10 px-12 xl:px-32">
+      <div className="relative justify-center hidden lg:flex flex-row overflow-hidden w-full px-12 xl:px-32">
 
         {/* container for textside */}
         <div className="relative z-10 flex flex-col gap-1 mb-30 self-center basis-[50%] max-w-100 xl:max-w-none">
@@ -130,13 +130,11 @@ export default function Home() {
             />
         </div>
 
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
           <ChevronDown className="h-8 w-8 text-white/70 animate-bounce" />
         </div>
 
       </div>
-
-
 
       {/* container for tech stack mobile */}
       <div className="flex flex-col gap-5 w-full px-4 overflow-hidden lg:hidden">
@@ -382,7 +380,12 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col px-32">
-          <ProjectCard image="/WuwaHomepage.png" title="Wuwa.Network" description="Create a build card"/>
+          <ProjectCard 
+            image="/WuwaHomepage.png" 
+            title="Wuwa.Network" 
+            description="Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
+            iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
+            />
       </div>
 
     </div>
