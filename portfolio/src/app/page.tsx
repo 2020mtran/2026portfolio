@@ -8,6 +8,7 @@ import Header from "@/components/ui/header";
 import MobileHeader from "@/components/ui/mobileHeader";
 import { useScrollbarVisibility } from "@/components/ui/useScrollbarVisibility";
 import { ChevronDown } from "lucide-react";
+import ProjectCard from "@/components/ui/projectShowcase";
 
 export default function Home() {
 
@@ -135,9 +136,7 @@ export default function Home() {
 
       </div>
 
-      {/* <div className="flex bottom-8 left-1/2 -translate-x-1/2">
-        <ChevronDown className="h-8 w-8 text-white/70 animate-bounce" />
-      </div> */}
+
 
       {/* container for tech stack mobile */}
       <div className="flex flex-col gap-5 w-full px-4 overflow-hidden lg:hidden">
@@ -188,11 +187,10 @@ export default function Home() {
       </div>
 
       {/* container for tech stack pc */}
-      <div className="hidden lg:flex flex-col gap-5 w-full px-4 overflow-hidden">
+      <div className="hidden lg:flex flex-col gap-5 w-full px-32 overflow-hidden">
         <h1 className="text-gradient text-5xl font-inter font-bold text-center">Tech Stack</h1>
 
-        {/* container for marquee */}
-        <Marquee className="" speed={30}>
+        <Marquee className="" speed={20}>
           {techStack.map((tech, i) => (
             <div className="flex flex-col">
               <div
@@ -381,9 +379,11 @@ export default function Home() {
           </div>
         </div>
 
-
       </div>
 
+      <div className="flex flex-col px-32">
+          <ProjectCard image="/WuwaHomepage.png" title="Wuwa.Network" description="Create a build card"/>
+      </div>
 
     </div>
   );
