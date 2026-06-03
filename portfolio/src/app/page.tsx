@@ -254,10 +254,10 @@ export default function Home() {
               src="/EatWithEmilyHomepage.png"
               width={800}
               height={500}
-              alt="Picture of my best website"
+              alt="Recipe website for a client"
             />
           <div className="px-6 py-4 bg-gray-900 flex flex-col gap-2">
-            <div className="font-bold text-xl">EatWithEmily.com</div>
+            <div className="font-bold text-xl">Freelancing Project</div>
             <p className="text-gray-200 text-base">
               Freelancing project for a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. 
             </p>
@@ -379,13 +379,19 @@ export default function Home() {
 
       </div>
 
-      <div className="flex flex-col px-32">
+      <div className="flex flex-col px-32 gap-16">
           <ProjectCard 
             image="/WuwaHomepage.png" 
             title="Wuwa.Network" 
             description="Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
             iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
-            />
+          />
+          <ProjectCard 
+            image="/EatWithEmilyHomepage.png" 
+            title="Freelancing Project" 
+            description="For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
+            iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
+          />
       </div>
 
     </div>

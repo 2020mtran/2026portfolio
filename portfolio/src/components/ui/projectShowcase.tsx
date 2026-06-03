@@ -12,7 +12,8 @@ export default function ProjectCard({
 }: ProjectCardProps) {
 
     return (
-        <div className="relative flex overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
+        <div className="relative flex overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full transition-all
+        duration-300 hover:-translate-y-1 hover:border-[#5a5a5a] hover:shadow-[0_0_60px_rgba(255,255,255,0.06)]">
 
         {/* Image Side */}
         <div className="relative basis-[65%] overflow-hidden" style={{
@@ -37,7 +38,7 @@ export default function ProjectCard({
         </div>
 
         {/* Content Side */}
-        <div className="relative basis-[40%] p-10 flex flex-col">
+        <div className="relative basis-[40%] py-8 pr-5 flex flex-col">
 
             <h2 className="text-4xl font-bold text-gray-300">
                 {title}
