@@ -9,6 +9,7 @@ import MobileHeader from "@/components/ui/mobileHeader";
 import { useScrollbarVisibility } from "@/components/ui/useScrollbarVisibility";
 import { ChevronDown } from "lucide-react";
 import ProjectCard from "@/components/ui/projectShowcase";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
 
@@ -48,16 +49,16 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full py-16">
+    <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full py-8">
 
-      <div className="lg:hidden absolute inset-0">
+      <div className="lg:hidden absolute inset-0 pointer-events-none -z-10">
         <Spotlight
           gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .1) 0, hsla(360, 100%, 0%, 0.2) 50%, hsla(210, 100%, 45%, 0) 80%)"
           gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
           gradientThird="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
         />
       </div>
-      <div className="hidden lg:flex absolute inset-0">
+      <div className="hidden lg:flex absolute inset-0 pointer-events-none -z-10">
         <Spotlight
           gradientFirst="radial-gradient(68.54% 68.72% at 50% 31.46%, hsla(220, 100%, 85%, .21) 0, hsla(360, 100%, 0%, 0.12) 50%, hsla(210, 100%, 45%, 0) 80%)"
           gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
@@ -386,27 +387,45 @@ export default function Home() {
             title="Wuwa.Network" 
             description="Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
             iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
+            githubLink="https://github.com/2020mtran/card-testing"
           />
           <ProjectCard 
             image="/EatWithEmilyHomepage.png" 
             title="Freelancing Project" 
             description="For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
             iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
+            githubLink="https://github.com/2020mtran/recipe-website"
           />
           <ProjectCard 
             image="/WebsiteTemplateExample.png" 
             title="More Projects" 
             description="Other projects I have done include: another portfolio, website templates, Discord bots, and a mental health mobile app! "
             iconsArray={["/react-original.svg", "/html5-original.svg", "/css3-original.svg", "/python-original.svg", "/amazonwebservices-original-wordmark.svg", "/mongodb-original.svg", "/firebase-original.svg"]}
+            githubLink="https://github.com/2020mtran"
           />
       </div>
 
       {/* container for footer pc */}
-      <div className='flex flex-col w-full px-32 pt-16 border-t border-[#f2f2f21a]'>
-            <div className='flex flex-col gap-5'>
-              <p className='text-white text-left text-xxs/3 md:text-xs lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl'>All rights reserved. Copyright © 2026 Matthew Tran</p>
-            </div>
+      <div className='flex flex-col w-full px-32 pt-16 pb-8 border-t border-[#f2f2f21a]'>
+        <div className='flex flex-col gap-5'>
+          <div className="flex flex-row gap-5">
+            <a
+            href="https://github.com/2020mtran"
+            target="_blank"
+            className="hover:scale-110 transition-transform inline-block"
+            >
+              <FaGithub className="text-4xl text-white" />
+            </a>
+            <a
+            href="https://www.linkedin.com/in/2020mtran/"
+            target="_blank"
+            >
+              <FaLinkedin className="text-4xl text-white hover:scale-110 transition-transform" />
+            </a>
+          </div>
+          <p className='text-white text-left text-md'>All rights reserved. Copyright © 2026 Matthew Tran</p>
         </div>
+      </div>
 
     </div>
   );

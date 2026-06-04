@@ -6,10 +6,11 @@ type ProjectCardProps = {
     title: string;
     description: string;
     iconsArray: Array<string>;
+    githubLink: string;
 }
 
 export default function ProjectCard({
-    image, title, description, iconsArray,
+    image, title, description, iconsArray, githubLink,
 }: ProjectCardProps) {
 
     return (
@@ -80,7 +81,7 @@ export default function ProjectCard({
                 ))}
 
                 <a
-                href="https://github.com"
+                href={githubLink}
                 target="_blank"
                 className="ml-auto"
                 >
