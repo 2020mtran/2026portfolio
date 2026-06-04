@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 type ProjectCardProps = {
     image: string;
@@ -38,7 +39,7 @@ export default function ProjectCard({
         </div>
 
         {/* Content Side */}
-        <div className="relative basis-[40%] py-8 pr-5 flex flex-col">
+        <div className="relative basis-[40%] py-8 pr-8 flex flex-col">
 
             <h2 className="text-4xl font-bold text-gray-300">
                 {title}
@@ -77,16 +78,15 @@ export default function ProjectCard({
                         height={40}
                     />
                 ))}
-            </div>
 
-            {/* Github */}
-            {/* <a
-            href="https://github.com"
-            target="_blank"
-            className="absolute bottom-8 right-8"
-            >
-            <FaGithub className="text-4xl text-slate-900 hover:scale-110 transition-transform" />
-            </a> */}
+                <a
+                href="https://github.com"
+                target="_blank"
+                className="ml-auto"
+                >
+                    <FaGithub className="text-4xl text-white hover:scale-110 transition-transform" />
+                </a>
+            </div>
 
         </div>
         </div>

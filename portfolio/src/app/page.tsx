@@ -379,6 +379,7 @@ export default function Home() {
 
       </div>
 
+      {/* container for project section pc */}
       <div className="flex flex-col px-32 gap-16">
           <ProjectCard 
             image="/WuwaHomepage.png" 
@@ -392,7 +393,20 @@ export default function Home() {
             description="For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
             iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
           />
+          <ProjectCard 
+            image="/WebsiteTemplateExample.png" 
+            title="More Projects" 
+            description="Other projects I have done include: another portfolio, website templates, Discord bots, and a mental health mobile app! "
+            iconsArray={["/react-original.svg", "/html5-original.svg", "/css3-original.svg", "/python-original.svg", "/amazonwebservices-original-wordmark.svg", "/mongodb-original.svg", "/firebase-original.svg"]}
+          />
       </div>
+
+      {/* container for footer pc */}
+      <div className='flex flex-col w-full px-32 pt-16 border-t border-[#f2f2f21a]'>
+            <div className='flex flex-col gap-5'>
+              <p className='text-white text-left text-xxs/3 md:text-xs lg:text-base xl:text-lg 2xl:text-xl 3xl:text-xl'>All rights reserved. Copyright © 2026 Matthew Tran</p>
+            </div>
+        </div>
 
     </div>
   );
