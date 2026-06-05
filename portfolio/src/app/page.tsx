@@ -10,6 +10,7 @@ import { useScrollbarVisibility } from "@/components/ui/useScrollbarVisibility";
 import { ChevronDown } from "lucide-react";
 import ProjectCard from "@/components/ui/projectShowcase";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Footer from "@/components/ui/footer";
 
 export default function Home() {
 
@@ -388,6 +389,7 @@ export default function Home() {
             description="Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
             iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
             githubLink="https://github.com/2020mtran/card-testing"
+            pageLink=""
           />
           <ProjectCard 
             image="/EatWithEmilyHomepage.png" 
@@ -395,6 +397,7 @@ export default function Home() {
             description="For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
             iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
             githubLink="https://github.com/2020mtran/recipe-website"
+            pageLink=""
           />
           <ProjectCard 
             image="/WebsiteTemplateExample.png" 
@@ -402,30 +405,12 @@ export default function Home() {
             description="Other projects I have done include: another portfolio, website templates, Discord bots, and a mental health mobile app! "
             iconsArray={["/react-original.svg", "/html5-original.svg", "/css3-original.svg", "/python-original.svg", "/amazonwebservices-original-wordmark.svg", "/mongodb-original.svg", "/firebase-original.svg"]}
             githubLink="https://github.com/2020mtran"
+            pageLink="projects"
           />
       </div>
 
       {/* container for footer pc */}
-      <div className='flex flex-col w-full px-32 pt-16 pb-8 border-t border-[#f2f2f21a]'>
-        <div className='flex flex-col gap-5'>
-          <div className="flex flex-row gap-5">
-            <a
-            href="https://github.com/2020mtran"
-            target="_blank"
-            className="hover:scale-110 transition-transform inline-block"
-            >
-              <FaGithub className="text-4xl text-white" />
-            </a>
-            <a
-            href="https://www.linkedin.com/in/2020mtran/"
-            target="_blank"
-            >
-              <FaLinkedin className="text-4xl text-white hover:scale-110 transition-transform" />
-            </a>
-          </div>
-          <p className='text-white text-left text-md'>All rights reserved. Copyright © 2026 Matthew Tran</p>
-        </div>
-      </div>
+      <Footer />
 
     </div>
   );

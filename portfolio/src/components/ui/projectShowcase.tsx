@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type ProjectCardProps = {
     image: string;
@@ -7,14 +9,17 @@ type ProjectCardProps = {
     description: string;
     iconsArray: Array<string>;
     githubLink: string;
+    pageLink: string;
 }
 
 export default function ProjectCard({
-    image, title, description, iconsArray, githubLink,
+    image, title, description, iconsArray, githubLink, pageLink,
 }: ProjectCardProps) {
 
+    const router = useRouter();
+
     return (
-        <div className="rounded-[32px] p-2 border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] transition-all
+        <div onClick={() => router.push(pageLink)} className="cursor-pointer rounded-[32px] p-2 border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] transition-all
             duration-300 hover:-translate-y-1 hover:border-[#5a5a5a] hover:shadow-[0_0_60px_rgba(255,255,255,0.06)]">
             
             <div className="relative flex overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
