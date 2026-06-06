@@ -13,7 +13,7 @@ export default function Projects() {
                 <ProjectCard 
                     image="/WuwaHomepage.png" 
                     title="Wuwa.Network" 
-                    description="Jun. - Sep. 2025 | Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
+                    description="June 2025 - Sep. 2025 | Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
                     iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
                     githubLink=""
                     pageLink=""
@@ -21,7 +21,7 @@ export default function Projects() {
                 <ProjectCard 
                     image="/EatWithEmilyHomepage.png" 
                     title="Freelancing Project" 
-                    description="Feb. - May 2025 | For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
+                    description="Feb. 2025 - May 2025 | For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
                     iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
                     githubLink=""
                     pageLink=""
@@ -52,8 +52,8 @@ export default function Projects() {
                 />
                 <ProjectCard 
                     image="/MentalMe.png" 
-                    title="Discord Bots" 
-                    description="June 2024 - July 2024 | BlitzBot allows users to make personal gaming ranked leaderboards with friends. Outrider Amber allows users to obtain roles and ping them when new releases for a game appear."
+                    title="MentalMe" 
+                    description="Jan. 2024 - May 2024 | MentalMe is a mental health mobile app that reminds users to care for their mental health. Users can journal, chat with the app’s mascot, and claim daily/weekly login rewards to use on in-app purchasable cosmetics.  "
                     iconsArray={["python-original.svg", "/mongodb-original.svg"]}
                     githubLink=""
                     pageLink=""
