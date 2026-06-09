@@ -16,7 +16,7 @@ export default function Projects() {
                     description="June 2025 - Sep. 2025 | Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
                     iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/wuwaNetwork"
                 />
                 <ProjectCard 
                     image="/EatWithEmilyHomepage.png" 
