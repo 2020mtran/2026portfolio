@@ -7,9 +7,9 @@ import Image from "next/image";
 export default function WuwaNetwork() {
 
     return (
-        <div className="flex flex-col min-h-screen items-center justify-center gap-16 overflow-hidden relative w-full">
+        <div className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative w-full pb-8">
             <Header />
-            <div className="flex flex-col relative min-h-screen w-full bg-[radial-gradient(circle_farthest-side_at_50%_20%,_rgba(0,99,200,0.5),_transparent_140%)] pt-20">
+            <div className="flex flex-col relative min-h-screen w-full bg-[radial-gradient(circle_farthest-side_at_50%_20%,rgba(0,99,200,0.5),transparent_140%)] pt-20">
                 <div className="flex flex-col px-64 gap-6 mt-16">
                     <h1 className="text-4xl xl:text-6xl text-center font-bold drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] bg-clip-text text-transparent" style={{
                         backgroundImage:
@@ -36,22 +36,21 @@ export default function WuwaNetwork() {
             <div className="flex flex-row px-64 pt-32 gap-16">
                 <div className="flex flex-col gap-6">
                     <h2 className="text-white text-lg">Vision</h2>
-                    <h2 className="text-white opacity-60 text-md">One day, I wanted to showcase my character builds from a game called Wuthering Waves to my friends. I looked for websites to do so and the few I found were inefficient.</h2>
-                    <h2 className="text-white opacity-60 text-md">The websites either had fully manual input or had an inaccurate scanner.</h2>
-                    <h2 className="text-white opacity-60 text-md">As a challenge, I decided to make a website to solve these problems. It would be fully automatic with a singular upload and the scanner would be fine-tuned to ensure accuracy.</h2>
+                    <p className="text-white opacity-60 text-md">One day, I wanted to showcase my character builds from a game called Wuthering Waves to my friends. I looked for websites to do so and the few I found were inefficient.</p>
+                    <p className="text-white opacity-60 text-md">The websites either had fully manual input or had an inaccurate scanner.</p>
+                    <p className="text-white opacity-60 text-md">As a challenge, I decided to make a website to solve these problems. It would be fully automatic with a singular upload and the scanner would be fine-tuned to ensure accuracy.</p>
                 </div>
                 <div className="flex flex-col gap-6">
                     <h2 className="text-white text-lg">Overview</h2>
-                    <h2 className="text-white opacity-60 text-md">- Allows users to upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~97% accuracy (~100% with post-processing). Testing done through voluntary users in an online community. </h2>
+                    <h2 className="text-white opacity-60 text-md">- Allows users to upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~97% accuracy (~100% with post-processing).</h2>
                     <h2 className="text-white opacity-60 text-md">- 120+ unique data points are compiled and summarized in a card with total values and a stylish display.</h2>
                     <h2 className="text-white opacity-60 text-md">- Intricate testing done through voluntary users in an online community.</h2>
                 </div>
             </div>
-            <div className="flex flex-col px-64 gap-16">
+            <div className="flex flex-col px-64 gap-16 py-16">
                 <div className="flex flex-col items-center gap-6">
                     <h2 className="text-white text-2xl">Highlights</h2>
-                    <div className="rounded-[32px] p-4 border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)] transition-all
-                    duration-300 hover:-translate-y-1 hover:border-[#5a5a5a] hover:shadow-[0_0_60px_rgba(255,255,255,0.06)]">
+                    <div className="rounded-[32px] p-4 border border-white/10 shadow-[0_40px_80px_rgba(0,0,0,0.5)]">
                     
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -62,7 +61,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">Final Output Example</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">01: Final Output Example</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -73,7 +72,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">Showcase of Different Outputs</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">02: Showcase of Different Outputs</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -84,7 +83,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">Generator Page</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">03: Generator Page</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -95,7 +94,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">Users can confirm their stats before generating the card.</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">04: Users can confirm their stats before generating the card.</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -106,7 +105,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">FAQ Page</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">05: FAQ Page</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -117,7 +116,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">A few questions users may have.</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">06: A few questions users may have.</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -128,7 +127,7 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">Project Resources Page</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-end">07: Project Resources Page</h2>
 
                         <div className="relative flex flex-col overflow-hidden rounded-3xl bg-[linear-gradient(190deg,#252525,#121212)] border border-[#3d3d3d] shadow-[0_0_40px_rgba(255,255,255,0.03)] min-h-87.5 w-full">
                             <Image
@@ -139,14 +138,8 @@ export default function WuwaNetwork() {
                                 className="w-full h-full object-cover"
                             />
                         </div>
-                        <h2 className="text-white opacity-50 text-xs pt-4 pb-10 text-center">A few resources to provide the user with a look behind-the-scenes of my project including timeline of events and ideas.</h2>
+                        <h2 className="text-white opacity-50 text-xs pt-4 text-end">08: A few resources to provide the user with a look behind-the-scenes of my project including timeline of events and ideas.</h2>
                     </div>
-                </div>
-                <div className="flex flex-col gap-6">
-                    <h2 className="text-white text-lg">Overview</h2>
-                    <h2 className="text-white opacity-60 text-md">- Allows users to upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~97% accuracy (~100% with post-processing). Testing done through voluntary users in an online community. </h2>
-                    <h2 className="text-white opacity-60 text-md">- 120+ unique data points are compiled and summarized in a card with total values and a stylish display.</h2>
-                    <h2 className="text-white opacity-60 text-md">- Intricate testing done through voluntary users in an online community.</h2>
                 </div>
             </div>
             <Footer />
