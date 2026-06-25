@@ -389,7 +389,7 @@ export default function Home() {
             description="Users upload an image of their in-game stats and extract data using Optical Character Recognition (OCR) with ~100% accuracy including post-processing."
             iconsArray={["/nextjs-original.svg", "/tailwindcss-original.svg", "/python-original.svg"]}
             githubLink="https://github.com/2020mtran/card-testing"
-            pageLink=""
+            pageLink="projects/wuwaNetwork"
           />
           <ProjectCard 
             image="/EatWithEmilyHomepage.png" 
@@ -397,7 +397,7 @@ export default function Home() {
             description="For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
             iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
             githubLink="https://github.com/2020mtran/recipe-website"
-            pageLink=""
+            pageLink="projects/freelancingProject"
           />
           <ProjectCard 
             image="/WebsiteTemplateExample.png" 
