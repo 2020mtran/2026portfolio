@@ -40,7 +40,7 @@ export default function Projects() {
                     description="Sep. 2024 - Nov. 2024 | Learned how to create websites using basic HTML and CSS. I went back to learn the fundamentals of web development and built some website templates as practice."
                     iconsArray={["/html5-original.svg", "/css3-original.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/websiteTemplates"
                 />
                 <ProjectCard 
                     image="/DiscordBotsExample.png" 
@@ -48,7 +48,7 @@ export default function Projects() {
                     description="June 2024 - July 2024 | BlitzBot allows users to make personal gaming ranked leaderboards with friends. Outrider Amber allows users to obtain roles and ping them when new releases for a game appear."
                     iconsArray={["python-original.svg", "/mongodb-original.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/discordBots"
                 />
                 <ProjectCard 
                     image="/MentalMe.png" 
