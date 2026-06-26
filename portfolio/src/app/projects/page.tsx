@@ -24,7 +24,7 @@ export default function Projects() {
                     description="Feb. 2025 - May 2025 | For a client who wanted her recipe website upgraded. Includes dynamic content rendering of ~150 pages, cloud databasing, and revenue-generating ads. "
                     iconsArray={["/react-original.svg", "/tailwindcss-original.svg", "/cloudinary.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/freelancingProject"
                 />
                 <ProjectCard 
                     image="/OldPortfolioHomepage.png" 
@@ -32,7 +32,7 @@ export default function Projects() {
                     description="Dec. 2024 - Jan. 2025 | Developed a portfolio website highly inspired by Discord profile layouts. Integrated direct emailing, multiple pages, and custom SVGs."
                     iconsArray={["/react-original.svg", "/css3-original.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/oldPortfolio"
                 />
                 <ProjectCard 
                     image="/WebsiteTemplateExample.png" 
