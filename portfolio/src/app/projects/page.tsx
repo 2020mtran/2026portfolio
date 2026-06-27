@@ -56,7 +56,7 @@ export default function Projects() {
                     description="Jan. 2024 - May 2024 | MentalMe is a mental health mobile app that reminds users to care for their mental health. Users can journal, chat with the app’s mascot, and claim daily/weekly login rewards to use on in-app purchasable cosmetics.  "
                     iconsArray={["python-original.svg", "/mongodb-original.svg"]}
                     githubLink=""
-                    pageLink=""
+                    pageLink="projects/mentalMe"
                 />
             </div>
             <Footer />
