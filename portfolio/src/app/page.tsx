@@ -111,10 +111,7 @@ export default function Home() {
 
         {/* container for textside */}
         <div className="relative z-10 flex flex-col gap-1 mb-30 self-center basis-[50%] max-w-100 xl:max-w-none">
-          {/* <h1 className="text-gradient text-6xl font-inter font-bold">Matthew Tran</h1> */}
           <h1 className="text-4xl xl:text-6xl text-left font-bold">Creating products & interactions from <span className="italic drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">visions</span></h1>
-          {/* <h2 className="text-gradient text-2xl">Master's Computer Science Student</h2> */}
-          {/* <h2 className="text-gradient text-2xl">Software Engineering & Web Development</h2> */}
         </div>
 
         {/* container for 3d models */}
