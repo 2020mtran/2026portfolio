@@ -8,12 +8,12 @@ export default function MobileHeader() {
                 rounded-full border border-white/10 
                 bg-white/5 backdrop-blur-2xl backdrop-saturate-150 
                 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all active:scale-95">
-                    <button className="flex items-center px-5 py-2.5 
+                    <Link href="/" className="flex items-center px-5 py-2.5 
                     rounded-full bg-white/5 backdrop-blur-2xl backdrop-saturate-150 
-                    shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all">About</button>
-                    <button className="flex items-center px-5 py-2.5 
+                    shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] transition-all">About</Link>
+                    <Link href="/projects" className="flex items-center px-5 py-2.5 
                     rounded-full
-                    transition-all">Projects</button>
+                    transition-all">Projects</Link >
                 </div>
             </div>
         </header>
