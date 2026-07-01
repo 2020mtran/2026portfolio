@@ -6,7 +6,7 @@ export default function Header() {
             <div className="flex items-center justify-between w-full">
                 <Link href="/" className="text-gradient text-xl font-bold">Matthew Tran</Link>
                 <nav className="flex gap-6 text-sm">
-                    <Link href="/">About</Link>
+                    <Link href="/about">About</Link>
                     <Link href="/projects">Projects</Link>
                     {/* <p>Contact</p> */}
                 </nav>
