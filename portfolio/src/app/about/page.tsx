@@ -185,7 +185,7 @@ export default function about() {
                                     alt="Project Screenshot"
                                     width={800}
                                     height={1200}
-                                    className="w-full h-[500px] lg:h-[500px] lg:h-[600px] object-cover"
+                                    className="w-full h-[500px] lg:h-[600px] object-cover"
                                 />
                             </div>
                         </div>

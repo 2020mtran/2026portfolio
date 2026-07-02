@@ -137,7 +137,7 @@ export default function Home() {
       </div>
 
       {/* container for tech stack mobile */}
-      <div className="flex flex-col gap-5 w-full px-4 overflow-hidden lg:hidden">
+      <div className="flex flex-col gap-5 w-full px-4 md:px-12 overflow-hidden lg:hidden">
         <h1 className="text-white text-5xl font-inter font-bold text-center">Tech Stack</h1>
 
         {/* container for marquee */}
@@ -185,7 +185,7 @@ export default function Home() {
       </div>
 
       {/* container for tech stack pc */}
-      <div className="hidden lg:flex flex-col gap-5 w-full px-32 overflow-hidden">
+      <div className="hidden lg:flex flex-col gap-5 w-full lg:px-16 xl:px-32 overflow-hidden">
         <h1 className="text-gradient text-5xl font-inter font-bold text-center">Tech Stack</h1>
 
         <Marquee className="" speed={20}>
@@ -211,8 +211,8 @@ export default function Home() {
         
       </div>
 
-      {/* container for project section mobile */}
-      <div className="flex flex-col gap-5 mb-8 lg:hidden">
+      {/* container for project section mobile -> disabled and replaced since ProjectCard adapts mobile already */}
+      <div className="hidden flex-col gap-5 mb-8 lg:hidden">
         <h1 className="text-gradient text-5xl font-inter font-bold text-center">Projects</h1>
         <div className="max-w-sm rounded overflow-hidden shadow-whiteshadow-lg px-4">
           <Image 
@@ -380,7 +380,7 @@ export default function Home() {
       </div>
 
       {/* container for project section pc */}
-      <div className="flex flex-col px-32 gap-16">
+      <div className="flex flex-col md:px-12 lg:px-16 gap-16">
           <ProjectCard 
             image="/WuwaHomepage.png" 
             title="Wuwa.Network" 

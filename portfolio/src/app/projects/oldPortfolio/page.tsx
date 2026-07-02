@@ -10,7 +10,7 @@ export default function oldPortfolio() {
     return (
         <div className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative w-full pb-8">
             <div className="flex md:hidden w-full">
-                <MobileHeader />
+                <Header />
             </div>
             <div className="hidden md:flex w-full">
                 <Header />
